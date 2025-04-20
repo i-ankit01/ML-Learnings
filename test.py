@@ -1,6 +1,7 @@
 import pandas as pd
 import joblib
 model = joblib.load('price_prediction_model.pkl')
+# you can add routes 
 
 df = pd.read_csv('CropPricePrediction/crop_price_dataset.csv')
 df_filtered = df[(df['month'] == '2025-03-01') & (df['commodity_name'] == 'Rice')]
